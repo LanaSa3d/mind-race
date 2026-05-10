@@ -13,10 +13,11 @@ function getDbConnection(): PDO
         return $pdo;
     }
 
-    $host = getenv('DB_HOST') ?: 'localhost';
-    $database = getenv('DB_NAME') ?: 'mind_race_db';
-    $username = getenv('DB_USER') ?: 'root';
-    $password = getenv('DB_PASS') ?: '';
+    // XAMPP MySQL default connection settings.
+    $host = 'localhost';
+    $database = 'mind_race_db';
+    $username = 'root';
+    $password = '';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host={$host};dbname={$database};charset={$charset}";
