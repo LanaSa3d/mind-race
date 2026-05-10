@@ -56,12 +56,11 @@ require_once __DIR__ . '/includes/header.php';
 <section class="section section-accent">
     <div class="container split-panel">
         <div>
-            <p class="eyebrow">Built for XAMPP</p>
-            <h2>Dynamic PHP and MySQL, not a static demo.</h2>
+            <h2>Why Mind Race?</h2>
         </div>
         <p>
-            Mind Race includes PDO database operations, full CRUD pages, sample MySQL data, JavaScript timers,
-            and reusable PHP layout files that match the Advanced Web Programming project requirements.
+            Mind Race turns normal quizzes into an exciting challenge. It helps players stay focused, answer quickly,
+            and enjoy learning through friendly competition.
         </p>
     </div>
 </section>

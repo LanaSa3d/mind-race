@@ -22,7 +22,7 @@ require_once __DIR__ . '/includes/header.php';
         <article class="content-block">
             <h2>Project Idea</h2>
             <p>
-                Mind Race is a Kahoot-like quiz game web application. A host creates a quiz, adds timed questions,
+                Mind Race is a quiz game web application. A host creates a quiz, adds timed questions,
                 starts a room using a unique game code, and players join with their names to answer questions.
             </p>
             <p>
