@@ -8,7 +8,7 @@
             </div>
             <div>
                 <p>Advanced Web Programming Course Project</p>
-                <p>Developed by Lana Saad</p>
+                <p>Developed by : Lana Saad, Lana Maher, Lama Alkhawaja</p>
             </div>
         </div>
     </footer>

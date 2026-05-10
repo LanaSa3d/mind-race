@@ -143,4 +143,4 @@ CODE_EXPLANATION.md
 
 ## Developed By
 
-Lana Saad
+Developed by : Lana Saad, Lana Maher, Lama Alkhawaja
