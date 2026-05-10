@@ -1,0 +1,30 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local environment files
+.env
+*.local
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Dependency folders that should not be committed
+vendor/
+node_modules/
+
+# XAMPP or local database dumps
+*.sql.gz
+*.zip
+*.tar
+*.tar.gz
+
