@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+    <title id="title">Mind Race quiz track illustration</title>
+    <desc id="desc">A colorful quiz badge with answer tiles, a timer, and racing stripes.</desc>
+    <rect width="720" height="520" rx="36" fill="#10162f"/>
+    <path d="M70 380C165 300 250 420 350 340C455 255 545 310 650 220" fill="none" stroke="#3ddc97" stroke-width="22" stroke-linecap="round"/>
+    <path d="M80 425C185 345 265 465 375 385C485 305 565 355 665 265" fill="none" stroke="#ffca3a" stroke-width="14" stroke-linecap="round"/>
+    <rect x="110" y="94" width="500" height="250" rx="28" fill="#ffffff"/>
+    <rect x="145" y="130" width="235" height="70" rx="18" fill="#7b61ff"/>
+    <rect x="405" y="130" width="170" height="70" rx="18" fill="#ff5c7a"/>
+    <rect x="145" y="220" width="180" height="70" rx="18" fill="#00b2ff"/>
+    <rect x="350" y="220" width="225" height="70" rx="18" fill="#3ddc97"/>
+    <circle cx="580" cy="96" r="58" fill="#ffca3a"/>
+    <circle cx="580" cy="96" r="34" fill="#10162f"/>
+    <path d="M580 72v24l19 15" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M220 398l56-94h-44l65-104h62l-45 80h50l-93 118z" fill="#ffca3a"/>
+    <text x="170" y="178" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">A</text>
+    <text x="430" y="178" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">B</text>
+    <text x="170" y="268" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">C</text>
+    <text x="375" y="268" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#10162f">D</text>
+</svg>

@@ -132,3 +132,54 @@ function normalizeGameCode(string $gameCode): string
 {
     return strtoupper(trim($gameCode));
 }
+
+/**
+ * Get one quiz by its id.
+ */
+function getQuizById(PDO $pdo, int $quizId): ?array
+{
+    $statement = $pdo->prepare('SELECT * FROM quizzes WHERE id = :id');
+    $statement->execute(['id' => $quizId]);
+    $quiz = $statement->fetch();
+
+    return $quiz ?: null;
+}
+
+/**
+ * Get one quiz by its game code.
+ */
+function getQuizByGameCode(PDO $pdo, string $gameCode): ?array
+{
+    $statement = $pdo->prepare('SELECT * FROM quizzes WHERE game_code = :game_code');
+    $statement->execute(['game_code' => normalizeGameCode($gameCode)]);
+    $quiz = $statement->fetch();
+
+    return $quiz ?: null;
+}
+
+/**
+ * Get all questions for one quiz.
+ */
+function getQuestionsByQuiz(PDO $pdo, int $quizId): array
+{
+    $statement = $pdo->prepare('SELECT * FROM questions WHERE quiz_id = :quiz_id ORDER BY id ASC');
+    $statement->execute(['quiz_id' => $quizId]);
+
+    return $statement->fetchAll();
+}
+
+/**
+ * Recalculate and save a player's total score.
+ */
+function updatePlayerScore(PDO $pdo, int $playerId): void
+{
+    $statement = $pdo->prepare('SELECT COALESCE(SUM(earned_points), 0) FROM answers WHERE player_id = :player_id');
+    $statement->execute(['player_id' => $playerId]);
+    $score = (int) $statement->fetchColumn();
+
+    $update = $pdo->prepare('UPDATE players SET score = :score WHERE id = :player_id');
+    $update->execute([
+        'score' => $score,
+        'player_id' => $playerId,
+    ]);
+}
