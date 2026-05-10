@@ -1,4 +1,5 @@
-CREATE DATABASE IF NOT EXISTS mind_race_db;
+DROP DATABASE IF EXISTS mind_race_db;
+CREATE DATABASE mind_race_db;
 USE mind_race_db;
 
 SET FOREIGN_KEY_CHECKS = 0;
