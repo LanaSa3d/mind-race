@@ -193,6 +193,10 @@ a {
     padding: 64px 0;
 }
 
+.section-tight {
+    padding-top: 0;
+}
+
 .section-accent {
     color: #ffffff;
     background: var(--ink);
@@ -502,6 +506,12 @@ th {
     gap: 18px;
 }
 
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
 .field {
     display: grid;
     gap: 8px;
@@ -571,7 +581,8 @@ select:focus {
     .hero-grid,
     .split-panel,
     .content-grid,
-    .dashboard-grid {
+    .dashboard-grid,
+    .two-columns {
         grid-template-columns: 1fr;
     }
 

@@ -183,3 +183,20 @@ function updatePlayerScore(PDO $pdo, int $playerId): void
         'player_id' => $playerId,
     ]);
 }
+
+/**
+ * Get one question by its id.
+ */
+function getQuestionById(PDO $pdo, int $questionId): ?array
+{
+    $statement = $pdo->prepare(
+        'SELECT questions.*, quizzes.title AS quiz_title
+         FROM questions
+         INNER JOIN quizzes ON quizzes.id = questions.quiz_id
+         WHERE questions.id = :id'
+    );
+    $statement->execute(['id' => $questionId]);
+    $question = $statement->fetch();
+
+    return $question ?: null;
+}
